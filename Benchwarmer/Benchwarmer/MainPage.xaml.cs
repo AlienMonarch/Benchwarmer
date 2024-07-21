@@ -1,4 +1,6 @@
-﻿namespace Benchwarmer
+﻿using Benchwarmer.Resources.Pages;
+
+namespace Benchwarmer
 {
     public partial class MainPage : ContentPage
     {
@@ -8,17 +10,22 @@
         {
             InitializeComponent();
         }
-
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void LoginButton_Clicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            LoginButton.BackgroundColor = Colors.Blue;
+            if (UsernameField.Text.Contains("/"))
+            {
+                UsernameField.Text = "Fuck you";
+            }
+            else if (PasswordField.Text.Contains("/"))
+            {
+                PasswordField.Text = "fuck you";
+            }
+            else 
+            {
+                Thread.Sleep(50);
+                App.Current.MainPage = new NavigationPage(new Home());   
+            }
         }
     }
 

@@ -7,4 +7,8 @@
             InitializeComponent();
         }
     }
+    public class Login(string username, string password)
+    {
+
+    }
 }
