@@ -2,6 +2,7 @@ namespace Benchwarmer.Resources.Pages;
 
 public partial class Home : ContentPage
 {
+    int count = 0;
 	public Home()
 	{
 		InitializeComponent();

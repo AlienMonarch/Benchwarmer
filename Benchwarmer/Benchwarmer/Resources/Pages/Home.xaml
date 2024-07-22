@@ -6,7 +6,7 @@
     <VerticalStackLayout
         Padding="200,0"
         Spacing="30">
-        <Label 
+    <Label 
             Text="Benchwarmer"
             FontSize="50"
             Style="{StaticResource Headline}"
