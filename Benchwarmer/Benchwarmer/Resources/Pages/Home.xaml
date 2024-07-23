@@ -6,13 +6,17 @@
     <VerticalStackLayout
         Padding="200,0"
         Spacing="30">
-    <Label 
-            Text="Benchwarmer"
-            FontSize="50"
-            Style="{StaticResource Headline}"
-            SemanticProperties.HeadingLevel="Level1"/>
+        <Label 
+    Text="Benchwarmer"
+    FontSize="50"
+    Style="{StaticResource Headline}"
+    SemanticProperties.HeadingLevel="Level1"/>
         <Button
-            Text=""
-            Clicked="Button_Clicked"/>
-        <VerticalStackLayout/>
+    x:Name="Csvtest"
+    Text="CSVTEST"
+    Clicked="Csvtest_Clicked"/>
+        <Button
+    Text=""
+    Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
 </ContentPage>
