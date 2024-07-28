@@ -42,7 +42,7 @@
     <MauiXaml Update="Resources\Pages\Stats.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Resources\Pages\Team.xaml">
+    <MauiXaml Update="Resources\Pages\TeamView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

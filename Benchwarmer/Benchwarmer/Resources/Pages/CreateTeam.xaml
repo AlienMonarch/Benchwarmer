@@ -3,10 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benchwarmer.Resources.Pages.CreateTeam"
              Title="CreateTeam">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        Padding="200,0"
+        Spacing="20">
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Create Team"
+            FontSize="50"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Entry
+            x:Name="TeamNameField"
+            Text="Name"
+            IsTextPredictionEnabled="False"
+            SemanticProperties.Description="Name of the created team"/>
+        <Button
+            x:Name="CreateTeamButton"
+            Text="Create New Team"
+            Clicked="CreateTeamButton_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>

@@ -1,8 +1,8 @@
 namespace Benchwarmer.Resources.Pages;
 
-public partial class Team : ContentPage
+public partial class TeamView : ContentPage
 {
-	public Team()
+	public TeamView()
 	{
 		InitializeComponent();
 	}

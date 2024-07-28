@@ -1,4 +1,5 @@
-﻿using Benchwarmer.Resources.Pages;
+﻿using Benchwarmer.Resources.Code;
+using Benchwarmer.Resources.Pages;
 
 namespace Benchwarmer
 {
@@ -9,6 +10,7 @@ namespace Benchwarmer
         public MainPage()
         {
             InitializeComponent();
+            Main main = new Main();
         }
         private void LoginButton_Clicked(object sender, EventArgs e)
         {
@@ -23,7 +25,6 @@ namespace Benchwarmer
             }
             else 
             {
-                Thread.Sleep(50);
                 App.Current.MainPage = new NavigationPage(new Home());   
             }
         }

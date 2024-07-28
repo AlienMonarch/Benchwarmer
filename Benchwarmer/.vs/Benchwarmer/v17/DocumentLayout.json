@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\code\\csvmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\resources\\code\\csvmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\resources\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\pages\\createteam.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\resources\\pages\\createteam.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\code\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,16 +19,24 @@
       "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\resources\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\code\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\resources\\code\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\code\\veiwmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\resources\\code\\veiwmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\pages\\createteam.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\resources\\pages\\createteam.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\resources\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|c:\\users\\finnt\\onedrive\\documents\\github\\benchwarmer\\benchwarmer\\benchwarmer\\resources\\savedteams\\sample.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{733E293A-13C7-4827-8B10-8CF8A548B410}|Benchwarmer\\Benchwarmer.csproj|solutionrelative:benchwarmer\\resources\\savedteams\\sample.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 452,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,79 +62,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Benchwarmer\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\MainPage.xaml.cs",
-              "RelativeToolTip": "Benchwarmer\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "VeiwModel.cs",
+              "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Code\\VeiwModel.cs",
+              "RelativeDocumentMoniker": "Benchwarmer\\Resources\\Code\\VeiwModel.cs",
+              "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Code\\VeiwModel.cs",
+              "RelativeToolTip": "Benchwarmer\\Resources\\Code\\VeiwModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T04:19:57.245Z"
+              "WhenOpened": "2024-07-23T04:17:15.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Sample.csv",
-              "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\SavedTeams\\Sample.csv",
-              "RelativeDocumentMoniker": "Benchwarmer\\Resources\\SavedTeams\\Sample.csv",
-              "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\SavedTeams\\Sample.csv",
-              "RelativeToolTip": "Benchwarmer\\Resources\\SavedTeams\\Sample.csv",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2024-07-23T01:55:03.463Z"
+              "DocumentIndex": 4,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Benchwarmer\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\MainPage.xaml",
+              "RelativeToolTip": "Benchwarmer\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-23T04:06:14.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CSVmanager.cs",
-              "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Code\\CSVmanager.cs",
-              "RelativeDocumentMoniker": "Benchwarmer\\Resources\\Code\\CSVmanager.cs",
-              "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Code\\CSVmanager.cs",
-              "RelativeToolTip": "Benchwarmer\\Resources\\Code\\CSVmanager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T08:24:38.495Z",
+              "DocumentIndex": 7,
+              "Title": "CreateTeam.xaml",
+              "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Pages\\CreateTeam.xaml",
+              "RelativeDocumentMoniker": "Benchwarmer\\Resources\\Pages\\CreateTeam.xaml",
+              "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Pages\\CreateTeam.xaml",
+              "RelativeToolTip": "Benchwarmer\\Resources\\Pages\\CreateTeam.xaml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAUwBIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-23T04:01:29.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CreateTeam.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Pages\\CreateTeam.xaml.cs",
+              "RelativeDocumentMoniker": "Benchwarmer\\Resources\\Pages\\CreateTeam.xaml.cs",
+              "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Pages\\CreateTeam.xaml.cs",
+              "RelativeToolTip": "Benchwarmer\\Resources\\Pages\\CreateTeam.xaml.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAwwA8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T04:01:29.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Code\\Team.cs",
+              "RelativeDocumentMoniker": "Benchwarmer\\Resources\\Code\\Team.cs",
+              "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Code\\Team.cs",
+              "RelativeToolTip": "Benchwarmer\\Resources\\Code\\Team.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:56:31.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Benchwarmer\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\MainPage.xaml.cs",
+              "RelativeToolTip": "Benchwarmer\\MainPage.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T04:19:57.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Code\\Main.cs",
               "RelativeDocumentMoniker": "Benchwarmer\\Resources\\Code\\Main.cs",
               "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Code\\Main.cs",
               "RelativeToolTip": "Benchwarmer\\Resources\\Code\\Main.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T08:18:20.599Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Home.xaml.cs",
               "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Pages\\Home.xaml.cs",
               "RelativeDocumentMoniker": "Benchwarmer\\Resources\\Pages\\Home.xaml.cs",
               "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Pages\\Home.xaml.cs",
               "RelativeToolTip": "Benchwarmer\\Resources\\Pages\\Home.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T23:41:44.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Home.xaml",
               "DocumentMoniker": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Pages\\Home.xaml",
               "RelativeDocumentMoniker": "Benchwarmer\\Resources\\Pages\\Home.xaml",
               "ToolTip": "C:\\Users\\finnt\\OneDrive\\Documents\\GitHub\\Benchwarmer\\Benchwarmer\\Benchwarmer\\Resources\\Pages\\Home.xaml",
               "RelativeToolTip": "Benchwarmer\\Resources\\Pages\\Home.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAALAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-21T23:41:44.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-21T23:41:44.161Z"
             }
           ]
         },

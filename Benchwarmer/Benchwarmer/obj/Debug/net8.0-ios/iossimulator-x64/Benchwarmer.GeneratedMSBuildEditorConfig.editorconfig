@@ -12,95 +12,95 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Benchwarmer
-build_property.ProjectDir = C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\
+build_property.ProjectDir = c:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/App.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/AppShell.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/MainPage.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/CreateTeam.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/CreateTeam.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.CreateTeam.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Pages\CreateTeam.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Pages\CreateTeam.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/EditTeam.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/EditTeam.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.EditTeam.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Pages\EditTeam.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Pages\EditTeam.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Home.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Home.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.Home.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Pages\Home.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Pages\Home.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Login.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Pages\Login.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Pages\Login.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/PlayGame.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/PlayGame.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.PlayGame.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Pages\PlayGame.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Pages\PlayGame.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Profile.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Profile.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.Profile.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Pages\Profile.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Pages\Profile.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Settings.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Settings.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.Settings.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Pages\Settings.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Pages\Settings.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/SignUp.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/SignUp.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.SignUp.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Pages\SignUp.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Pages\SignUp.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Stats.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Stats.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.Stats.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Pages\Stats.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Pages\Stats.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/Team.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Pages/TeamView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.Team.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Pages\Team.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Pages\Team.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Pages.TeamView.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Pages\TeamView.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Pages\TeamView.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Styles/Colors.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Styles/Styles.xaml]
+[c:/Users/finnt/OneDrive/Documents/GitHub/Benchwarmer/Benchwarmer/Benchwarmer/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Benchwarmer.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

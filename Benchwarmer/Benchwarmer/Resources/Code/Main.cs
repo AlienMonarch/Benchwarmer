@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Benchwarmer.Resources.Code
 {
-    internal class Main
+    public partial class Main
     {
+        Team currentTeam;
         public Main() 
         {
             List<Team> teams = new List<Team>();
