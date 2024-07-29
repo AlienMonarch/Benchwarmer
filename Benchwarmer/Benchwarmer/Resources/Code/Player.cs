@@ -9,10 +9,10 @@ namespace Benchwarmer.Resources.Code
 {
     class Player
     {
-        string name;
-        string position;
-        int number;
-        int skill;
+        private string name;
+        private string position;
+        private int number;
+        private int skill;
         public Player(string tempname, string tempposition, int tempnumber, int tempskill) 
         {
             name = tempname;
@@ -27,5 +27,9 @@ namespace Benchwarmer.Resources.Code
                 skill = 0;
             }
         }
+        public string GetName() => name;
+        public string GetPosition() => position;
+        public int GetNumber() => number;
+        public int GetSkill() => skill;
     }
 }

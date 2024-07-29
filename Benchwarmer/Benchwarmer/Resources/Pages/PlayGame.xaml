@@ -2,8 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benchwarmer.Resources.Pages.PlayGame"
-             Title="PlayGame">
-    <VerticalStackLayout>
+             Shell.NavBarIsVisible="False" 
+             BackgroundColor="#FFFFFF">
+    <VerticalStackLayout
+        Padding="10"
+        Spacing="10">
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 

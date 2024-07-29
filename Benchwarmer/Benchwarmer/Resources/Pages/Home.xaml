@@ -2,15 +2,22 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benchwarmer.Resources.Pages.Home"
-             Title="Home">
+             Title="Home"
+             Shell.NavBarIsVisible="False" 
+             BackgroundColor="#FFFFFF">
     <VerticalStackLayout
         Padding="200,0"
-        Spacing="30">
-        <Label 
+        Spacing="40">
+        
+        <Label
+            x:Name="CsvText"
+    Padding="0,0,0,0"
     Text="Benchwarmer"
-    FontSize="50"
+    TextColor="#99E88C"
+    FontSize="70"
+    FontAttributes="Bold"
     Style="{StaticResource Headline}"
-    SemanticProperties.HeadingLevel="Level1"/>
+    SemanticProperties.HeadingLevel="Level1" />
         <Button
     x:Name="Csvtest"
     Text="CSVTEST"
@@ -18,5 +25,8 @@
         <Button
     Text=""
     Clicked="Button_Clicked"/>
+        <Button
+        Text="Play"
+        Clicked="Button_Clicked_1"/>
     </VerticalStackLayout>
 </ContentPage>

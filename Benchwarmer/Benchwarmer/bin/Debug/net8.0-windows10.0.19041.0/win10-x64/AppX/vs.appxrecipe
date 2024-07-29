@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-07-23T03:45:49.574</Modified>
+      <Modified>2024-07-28T23:54:05.283</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-07-23T02:03:02.778</Modified>
+      <Modified>2024-07-28T23:43:43.128</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Benchwarmer.runtimeconfig.json">
       <PackagePath>Benchwarmer.runtimeconfig.json</PackagePath>
-      <Modified>2024-07-23T02:03:02.320</Modified>
+      <Modified>2024-07-28T11:40:30.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Benchwarmer.dll">
       <PackagePath>Benchwarmer.dll</PackagePath>
-      <Modified>2024-07-23T03:45:48.175</Modified>
+      <Modified>2024-07-28T23:54:03.858</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Benchwarmer.exe</PackagePath>
-      <Modified>2024-07-23T03:45:48.245</Modified>
+      <Modified>2024-07-28T23:54:03.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -287,7 +287,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Benchwarmer.deps.json">
       <PackagePath>Benchwarmer.deps.json</PackagePath>
-      <Modified>2024-07-23T02:03:02.103</Modified>
+      <Modified>2024-07-28T23:43:42.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

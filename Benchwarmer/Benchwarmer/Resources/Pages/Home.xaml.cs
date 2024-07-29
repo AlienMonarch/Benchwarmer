@@ -18,8 +18,11 @@ public partial class Home : ContentPage
     private void Csvtest_Clicked(object sender, EventArgs e)
     {
         CSVmanager csv = new CSVmanager();
-        Csvtest.Text = csv.readCsv(@"\Resources\SavedTeams\Sample.csv")[0];
+        CsvText.Text = csv.readCsv(@"\Resources\SavedTeams\Sample.csv")[0];
+    }
 
-
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
+        App.Current.MainPage = new NavigationPage(new PlayGame());
     }
 }

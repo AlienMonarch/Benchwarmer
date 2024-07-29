@@ -72,7 +72,7 @@
 	  <MauiXaml Update="Resources\Pages\Home.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Pages\Login.xaml">
+	  <MauiXaml Update="Resources\Pages\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Pages\PlayGame.xaml">
@@ -90,7 +90,7 @@
 	  <MauiXaml Update="Resources\Pages\Stats.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources\Pages\Team.xaml">
+	  <MauiXaml Update="Resources\Pages\TeamPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

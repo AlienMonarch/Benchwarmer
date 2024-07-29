@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Benchwarmer.Resources.Pages.LoginPage"
+             Title=""
+             Shell.NavBarIsVisible="False" 
+             BackgroundColor="#FFFFFF">
+    <VerticalStackLayout
+        Padding="300,0"
+        Spacing="30">
+
+        <Label
+    Text="Benchwarmer"
+    FontSize="50"
+    Style="{StaticResource Headline}"
+    SemanticProperties.HeadingLevel="Level1" />
+
+        <Label
+    Text="Welcome Back"
+    Style="{StaticResource SubHeadline}"
+    SemanticProperties.HeadingLevel="Level2"
+    SemanticProperties.Description="Welcome to Becnhwarmer" />
+        
+        <Entry
+    x:Name="UsernameField"
+    Text="Username"
+    IsTextPredictionEnabled="False"
+    SemanticProperties.Description="Username field"/>
+        
+        <Entry
+    x:Name="PasswordField"
+    Text="Password"
+    IsTextPredictionEnabled="False"
+    SemanticProperties.Description="Password field"/>
+
+        <Button
+    x:Name="LoginButton"
+    Text="Login" 
+    SemanticProperties.Hint="Login"
+    Clicked="LoginButton_Clicked"
+    BackgroundColor="LightGreen"
+    HorizontalOptions="Fill" />
+
+    </VerticalStackLayout>
+</ContentPage>

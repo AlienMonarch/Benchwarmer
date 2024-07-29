@@ -8,7 +8,7 @@ namespace Benchwarmer.Resources.Code
 {
     class Team
     {
-        private List<Player> players;
+        private List<Player> players = new List<Player>();
         private string name;
         public Team(string tempname)
         {
