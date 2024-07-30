@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-07-28T23:54:05.283</Modified>
+      <Modified>2024-07-30T03:07:08.907</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Benchwarmer.dll">
       <PackagePath>Benchwarmer.dll</PackagePath>
-      <Modified>2024-07-28T23:54:03.858</Modified>
+      <Modified>2024-07-30T03:07:08.296</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Benchwarmer.exe</PackagePath>
-      <Modified>2024-07-28T23:54:03.998</Modified>
+      <Modified>2024-07-30T03:07:08.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

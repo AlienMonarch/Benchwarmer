@@ -11,13 +11,13 @@
         
         <Label
             x:Name="CsvText"
-    Padding="0,0,0,0"
-    Text="Benchwarmer"
-    TextColor="#99E88C"
-    FontSize="70"
-    FontAttributes="Bold"
-    Style="{StaticResource Headline}"
-    SemanticProperties.HeadingLevel="Level1" />
+            Padding="0,0,0,0"
+            Text="Benchwarmer"
+            TextColor="#99E88C"
+            FontSize="70"
+            FontAttributes="Bold"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
         <Button
     x:Name="Csvtest"
     Text="CSVTEST"
