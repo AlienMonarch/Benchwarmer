@@ -2,16 +2,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benchwarmer.Resources.Pages.PlayGame"
-             Shell.NavBarIsVisible="False" 
+             Shell.NavBarIsVisible="False"
              BackgroundColor="#FFFFFF">
-    <VerticalStackLayout
+    <ScrollView>
+        <VerticalStackLayout
         x:Name="Vsl"
-        Padding="10"
+        Padding="10,300,10,200"
         Spacing="10">
-        <Grid
+            <Image Source="hockeyfield.jpg"
+                   Rotation="90"/>
+            <Grid
             x:Name="GridLayout"
             Padding="10,10,0,0"
             ColumnSpacing="10"
             RowSpacing="10"/>
+            
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

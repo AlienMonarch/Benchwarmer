@@ -4,6 +4,7 @@
              x:Class="Benchwarmer.Resources.Pages.LoginPage"
              Title=""
              Shell.NavBarIsVisible="False" 
+             Shell.TabBarIsVisible="True"
              BackgroundColor="#FFFFFF">
     <VerticalStackLayout
         Padding="300,0"
@@ -24,12 +25,16 @@
         <Entry
     x:Name="UsernameField"
     Text="Username"
+            TextColor="Black"
+            BackgroundColor="#F1E3E4"
     IsTextPredictionEnabled="False"
     SemanticProperties.Description="Username field"/>
         
         <Entry
     x:Name="PasswordField"
     Text="Password"
+            TextColor="Black"
+BackgroundColor="#F1E3E4"
     IsTextPredictionEnabled="False"
     SemanticProperties.Description="Password field"/>
 

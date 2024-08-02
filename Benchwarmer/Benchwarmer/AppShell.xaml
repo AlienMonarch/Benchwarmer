@@ -3,13 +3,47 @@
     x:Class="Benchwarmer.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Benchwarmer"
-    Shell.FlyoutBehavior="Disabled"
-    Title="Benchwarmer">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    xmlns:Pages="clr-namespace:Benchwarmer.Resources.Pages"
+    Title="Benchwarmer"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="#F1E3E4">
+    <TabBar 
+        Shell.TabBarBackgroundColor="#F1E3E4"
+        Shell.TabBarTitleColor="#000000"
+        Shell.TabBarUnselectedColor="#1D1D1D">
+        <ShellContent
+            Title="Home"
+            Icon="homeicon.svg"
+            ContentTemplate="{DataTemplate Pages:Home}"/>
+        <ShellContent
+    Title="Login"
+    Icon="homeicon.svg"
+    ContentTemplate="{DataTemplate Pages:LoginPage}"/>
+        <ShellContent
+            Title="Profile"
+            Icon="profileicon.svg"
+            ContentTemplate="{DataTemplate Pages:Profile}"/>
+        <ShellContent
+            Title="Stats"
+            Icon="statsicon.svg"
+            ContentTemplate="{DataTemplate Pages:Stats}"/>
+        <ShellContent
+            Title="Team"
+            Icon="teamicon.svg"
+            ContentTemplate="{DataTemplate Pages:TeamPage}"/>
+        <ShellContent
+            Title="Settings"
+            Icon="settingsicon.svg"
+            ContentTemplate="{DataTemplate Pages:Settings}"/>
+        <ShellContent
+            Title="Play"
+            ContentTemplate="{DataTemplate Pages:PlayGame}"/>
+        <ShellContent
+            Title="Create Team"
+            ContentTemplate="{DataTemplate Pages:CreateTeam}"/>
+        <ShellContent
+            Title="Edit Team"
+            ContentTemplate="{DataTemplate Pages:EditTeam}"/>
+    </TabBar>
 
 </Shell>

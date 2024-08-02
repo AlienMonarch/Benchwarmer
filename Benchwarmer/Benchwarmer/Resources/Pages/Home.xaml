@@ -22,11 +22,5 @@
     x:Name="Csvtest"
     Text="CSVTEST"
     Clicked="Csvtest_Clicked"/>
-        <Button
-    Text=""
-    Clicked="Button_Clicked"/>
-        <Button
-        Text="Play"
-        Clicked="Button_Clicked_1"/>
     </VerticalStackLayout>
 </ContentPage>

@@ -214,6 +214,84 @@
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hockeyfield.scale-100.jpg">
+      <PackagePath>hockeyfield.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeicon.scale-100.png">
+      <PackagePath>homeicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeicon.scale-125.png">
+      <PackagePath>homeicon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeicon.scale-150.png">
+      <PackagePath>homeicon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeicon.scale-200.png">
+      <PackagePath>homeicon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\homeicon.scale-400.png">
+      <PackagePath>homeicon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileicon.scale-100.png">
+      <PackagePath>profileicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileicon.scale-125.png">
+      <PackagePath>profileicon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileicon.scale-150.png">
+      <PackagePath>profileicon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileicon.scale-200.png">
+      <PackagePath>profileicon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileicon.scale-400.png">
+      <PackagePath>profileicon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsicon.scale-100.png">
+      <PackagePath>settingsicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsicon.scale-125.png">
+      <PackagePath>settingsicon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsicon.scale-150.png">
+      <PackagePath>settingsicon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsicon.scale-200.png">
+      <PackagePath>settingsicon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settingsicon.scale-400.png">
+      <PackagePath>settingsicon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\statsicon.scale-100.png">
+      <PackagePath>statsicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\statsicon.scale-125.png">
+      <PackagePath>statsicon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\statsicon.scale-150.png">
+      <PackagePath>statsicon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\statsicon.scale-200.png">
+      <PackagePath>statsicon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\statsicon.scale-400.png">
+      <PackagePath>statsicon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\teamicon.scale-100.png">
+      <PackagePath>teamicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\teamicon.scale-125.png">
+      <PackagePath>teamicon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\teamicon.scale-150.png">
+      <PackagePath>teamicon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\teamicon.scale-200.png">
+      <PackagePath>teamicon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\teamicon.scale-400.png">
+      <PackagePath>teamicon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Benchwarmer.deps.json">
       <PackagePath>Benchwarmer.deps.json</PackagePath>
     </AppxPackagedFile>
