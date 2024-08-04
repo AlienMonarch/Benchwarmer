@@ -9,11 +9,12 @@ namespace Benchwarmer
         {
             InitializeComponent();
             CSVmanager csvmanager = new CSVmanager();
-            if (csvmanager.readCsv("\\Resources\\Memory\\Memory.csv")[0].Split(',')[1] == "0")
+            string isLoggedinValue = csvmanager.readCsv("\\Resources\\Memory\\Login.csv")[0].Split(',')[1];
+            if (isLoggedinValue != "1")
             {
                 App.Current.MainPage = new NavigationPage(new LoginPage());
             }
-            csvmanager.editFile(@"\Resorces\Memory\Memory.txt", "UserIsLoggedIn", "1", 0);
+            csvmanager.editFile(@"\Resources\Memory\Login.csv", "UserIsLoggedIn", "1", 1);
         }
     }
     public class Login(string username, string password)

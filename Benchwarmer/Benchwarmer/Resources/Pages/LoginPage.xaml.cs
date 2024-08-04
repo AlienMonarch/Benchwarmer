@@ -16,7 +16,7 @@ public partial class LoginPage : ContentPage
         users.Sort();
         if (users.BinarySearch(UsernameField.Text + "," + PasswordField.Text) >= 0)
         {
-            csvmanager.editFile("\\Resources\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
+            csvmanager.editFile("\\Resources\\Memory\\Login.csv", "UserIsLoggedIn", "1", 1);
             App.Current.MainPage = new NavigationPage(new AppShell());
         }
         else 
