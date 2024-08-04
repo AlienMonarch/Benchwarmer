@@ -2,9 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benchwarmer.Resources.Pages.LoginPage"
-             Title=""
              Shell.NavBarIsVisible="False" 
-             Shell.TabBarIsVisible="True"
              BackgroundColor="#FFFFFF">
     <VerticalStackLayout
         Padding="300,0"
@@ -17,34 +15,42 @@
     SemanticProperties.HeadingLevel="Level1" />
 
         <Label
-    Text="Welcome Back"
-    Style="{StaticResource SubHeadline}"
-    SemanticProperties.HeadingLevel="Level2"
-    SemanticProperties.Description="Welcome to Becnhwarmer" />
+            Text="Welcome Back"
+            Style="{StaticResource SubHeadline}"
+            SemanticProperties.HeadingLevel="Level2"
+            SemanticProperties.Description="Welcome to Becnhwarmer" />
         
         <Entry
-    x:Name="UsernameField"
-    Text="Username"
+            x:Name="UsernameField"
+            Text="Username"
             TextColor="Black"
             BackgroundColor="#F1E3E4"
-    IsTextPredictionEnabled="False"
-    SemanticProperties.Description="Username field"/>
+            IsTextPredictionEnabled="False"
+            SemanticProperties.Description="Username field"/>
         
         <Entry
-    x:Name="PasswordField"
-    Text="Password"
+            x:Name="PasswordField"
+            Text="Password"
             TextColor="Black"
-BackgroundColor="#F1E3E4"
-    IsTextPredictionEnabled="False"
-    SemanticProperties.Description="Password field"/>
+            BackgroundColor="#F1E3E4"
+            IsTextPredictionEnabled="False"
+            SemanticProperties.Description="Password field"/>
 
         <Button
-    x:Name="LoginButton"
-    Text="Login" 
-    SemanticProperties.Hint="Login"
-    Clicked="LoginButton_Clicked"
-    BackgroundColor="LightGreen"
-    HorizontalOptions="Fill" />
+            x:Name="LoginButton"
+            Text="Login" 
+            SemanticProperties.Hint="Login"
+            Clicked="LoginButton_Clicked"
+            BackgroundColor="LightGreen"
+            HorizontalOptions="Fill" />
+        <Button
+            x:Name="SignUpButton"
+            Text="Sign Up Instead"
+            SemanticProperties.Hint="Go to Sign Up page"
+            Opacity="100"
+            HorizontalOptions="Center"
+            Clicked="SignUpButton_Clicked"
+            />
 
     </VerticalStackLayout>
 </ContentPage>

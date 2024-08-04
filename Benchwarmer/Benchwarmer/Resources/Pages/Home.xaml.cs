@@ -8,7 +8,7 @@ public partial class Home : ContentPage
 	public Home()
 	{
 		InitializeComponent();
-	}
+    }
     private void Csvtest_Clicked(object sender, EventArgs e)
     {
         CSVmanager csv = new CSVmanager();

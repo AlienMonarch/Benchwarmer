@@ -8,17 +8,21 @@ namespace Benchwarmer
         public AppShell()
         {
             InitializeComponent();
+        }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
             CSVmanager csvmanager = new CSVmanager();
             string isLoggedinValue = csvmanager.readCsv("\\Resources\\Memory\\Login.csv")[0].Split(',')[1];
+
             if (isLoggedinValue != "1")
             {
+                //LoginPage
                 App.Current.MainPage = new NavigationPage(new LoginPage());
+                //csvmanager.editFile(@"\Resources\Memory\Login.csv", "UserIsLoggedIn", "Oh bad words everything broke :(", 1);
             }
-            csvmanager.editFile(@"\Resources\Memory\Login.csv", "UserIsLoggedIn", "1", 1);
+            csvmanager.editFile(@"\Resources\Memory\Login.csv", "UserIsLoggedIn", "0", 1);
         }
     }
-    public class Login(string username, string password)
-    {
 
-    }
 }

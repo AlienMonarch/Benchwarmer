@@ -21,8 +21,13 @@ public partial class LoginPage : ContentPage
         }
         else 
         {
-            await DisplayAlert("Username/Password Inccorect","You stupid motherfuker you got the username/password wrong", "OK");
+            await DisplayAlert("Username/Password Inccorect","You stupid haha you got the username/password wrong", "OK");
         }
         
+    }
+
+    private void SignUpButton_Clicked(object sender, EventArgs e)
+    {
+        App.Current.MainPage = new NavigationPage(new SignUp());
     }
 }
