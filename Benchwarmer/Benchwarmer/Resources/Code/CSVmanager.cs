@@ -16,10 +16,10 @@ namespace Benchwarmer.Resources.Code
             if (projectDirectory == null)
             {
                 projectDirectory = AppDomain.CurrentDomain.BaseDirectory.Split("\\bin")[0];
-                writeCsv("\\Resources\\Memory\\Memory.txt", new string[]{projectDirectory});
             }
         }
         public List<string> readCsv(string csvPath)
+            //outputs a list of strings of full lines of csv files. string.Split(',') later to get individual values
         {
             string finalpath = projectDirectory + csvPath;
             if (!File.Exists(finalpath))
