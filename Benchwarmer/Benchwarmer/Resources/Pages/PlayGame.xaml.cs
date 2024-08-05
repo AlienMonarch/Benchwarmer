@@ -8,7 +8,7 @@ public partial class PlayGame : ContentPage
 	{
 		InitializeComponent();
 		CSVmanager cSVmanager = new CSVmanager();
-		List<string> list = cSVmanager.readCsv(@"\Resources\SavedTeams\testTeam.csv");
+		List<string> list = cSVmanager.readCsv("\\SavedTeams\\testTeam.csv");
 		Team team = new Team("TeamName");
 		for (int i = 0; i < list.Count; i++)
 		{

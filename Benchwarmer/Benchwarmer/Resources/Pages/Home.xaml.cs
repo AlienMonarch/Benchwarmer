@@ -12,6 +12,6 @@ public partial class Home : ContentPage
     private void Csvtest_Clicked(object sender, EventArgs e)
     {
         CSVmanager csv = new CSVmanager();
-        CsvText.Text = csv.readCsv(@"\Resources\SavedTeams\Sample.csv")[0];
+        CsvText.Text = csv.readCsv("\\SavedTeams\\Sample.csv")[0];
     }
 }

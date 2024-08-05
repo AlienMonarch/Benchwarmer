@@ -20,7 +20,7 @@ public partial class SignUp : ContentPage
         string password = PasswordField.Text;
         CSVmanager csvmanager = new CSVmanager();
         Encryption encryption = new Encryption();
-        List<string> savedUsers = csvmanager.readCsv(@"\Resources\Users\Users.csv");
+        List<string> savedUsers = csvmanager.readCsv("\\Users\\Users.csv");
         savedUsers.Sort();
         bool founduser = false;
         foreach (string user in savedUsers)
@@ -33,8 +33,8 @@ public partial class SignUp : ContentPage
         }
         if (founduser == false)
         {
-            csvmanager.editFile("\\Resources\\Memory\\Login.csv", "UserIsLoggedIn", "1", 1);
-            csvmanager.writeCsv(@"\Resources\Users\Users.csv", new string[] {username + "," + password});
+            csvmanager.editFile("\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
+            csvmanager.writeCsv("\\Users\\Users.csv", new string[] {username + "," + password});
             App.Current.MainPage = new NavigationPage(new AppShell());
         }
     }

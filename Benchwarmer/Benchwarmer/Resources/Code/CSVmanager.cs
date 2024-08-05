@@ -15,7 +15,7 @@ namespace Benchwarmer.Resources.Code
         {
             if (projectDirectory == null)
             {
-                projectDirectory = AppDomain.CurrentDomain.BaseDirectory.Split("\\bin")[0];
+                projectDirectory = AppDomain.CurrentDomain.BaseDirectory.Split("\\bin")[0] + "\\Resources";
             }
         }
         public List<string> readCsv(string csvPath)
@@ -82,44 +82,6 @@ namespace Benchwarmer.Resources.Code
                     writer.WriteLine(line);
                 }
             }
-        }
-
-       /* public void editMemory(string path, string varName, string content) 
-        {
-            string finalPath = projectDirectory + path;
-            if (!File.Exists(finalPath))
-            {
-                throw new FileNotFoundException(finalPath);
-            }
-            List<string> lineContent = readCsv(finalPath);
-            int temp;
-            for (int i = 0; i < lineContent.Count; i++) 
-            {
-                if (lineContent[i].Split(",")[0] == varName)
-                {
-                    temp = i; break;
-                }
-                else if (i == lineContent.Count - 1) 
-                {
-                    Console.WriteLine("Variable not found");
-                }
-            }
-            using (var editor = new StreamWriter(finalPath)) 
-            {
-                while (true)
-                {
-
-                }
-            }
-        }*/
-
-        public void encrypt()
-        {
-
-        }
-        public void decrypt()
-        {
-
         }
     }
 }

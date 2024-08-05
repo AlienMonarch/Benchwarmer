@@ -15,13 +15,13 @@ public partial class LoginPage : ContentPage
         Encryption encryption = new Encryption();
         string username = UsernameField.Text;
         string password = PasswordField.Text;
-        List<string> users = csvmanager.readCsv(@"\Resources\Users\Users.csv");
+        List<string> users = csvmanager.readCsv("\\Users\\Users.csv");
         users.Sort();
         foreach (string user in users)
         {
             if (user.Split(',')[0] == encryption.encrypt(username) && user.Split(',')[1] == encryption.encrypt(password))
             {
-                csvmanager.editFile("\\Resources\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
+                csvmanager.editFile("\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
                 App.Current.MainPage = new NavigationPage(new AppShell());
             }
             else if (user.Split(',')[0] == encryption.encrypt(username) && user.Split(',')[1] != encryption.encrypt(password))

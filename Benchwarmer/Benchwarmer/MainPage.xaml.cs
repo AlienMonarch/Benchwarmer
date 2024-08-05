@@ -1,5 +1,7 @@
 ﻿using Benchwarmer.Resources.Pages;
+//Why are you here? This file is never used. Weirdo.
 
+//Leave please.
 namespace Benchwarmer
 {
     public partial class MainPage : ContentPage

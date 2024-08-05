@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Benchwarmer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0e5cf85601ea03efec1f0664b7cfae7bd0b61666")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+464806203d139cdc38c1c65bbcb7382a201d2612")]
 [assembly: System.Reflection.AssemblyProductAttribute("Benchwarmer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Benchwarmer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
