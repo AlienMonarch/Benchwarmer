@@ -19,16 +19,22 @@ public partial class SignUp : ContentPage
         string username = UsernameField.Text;
         string password = PasswordField.Text;
         CSVmanager csvmanager = new CSVmanager();
-        List<string> users = csvmanager.readCsv(@"\Resources\Users\Users.csv");
-        users.Sort();
-        if (users.BinarySearch(username + "," + password) >= 0)
+        Encryption encryption = new Encryption();
+        List<string> savedUsers = csvmanager.readCsv(@"\Resources\Users\Users.csv");
+        savedUsers.Sort();
+        bool founduser = false;
+        foreach (string user in savedUsers)
         {
-            await DisplayAlert("User Already Exists", "THIS IS NOT FINAL. User already exists", "Back");
+            if (user.Split(',')[0] == encryption.encrypt(username))
+            {
+                await DisplayAlert("User Already Exists", "User Already Exists. Use a Different Username", "OK");
+                founduser = true;
+            }
         }
-        else
+        if (founduser == false)
         {
             csvmanager.editFile("\\Resources\\Memory\\Login.csv", "UserIsLoggedIn", "1", 1);
-            csvmanager.writeCsv(@"\Resources\Users\Users.csv", new string[] { username + "," + password });
+            csvmanager.writeCsv(@"\Resources\Users\Users.csv", new string[] {username + "," + password});
             App.Current.MainPage = new NavigationPage(new AppShell());
         }
     }

@@ -10,14 +10,14 @@ namespace Benchwarmer.Resources.Code
     {
         private string name;
         private string username;
-        private List<string> teams;
+        private List<Team> teams;
         public UserClass() 
         { 
         
         }
         public void AddTeam(string name, Team team)
         {
-
+            teams.Add(team);
         }
     }
 }
