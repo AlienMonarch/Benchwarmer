@@ -8,37 +8,62 @@ namespace Benchwarmer.Resources.Code
 {
     internal class UserClass
     {
-        private string name;
         private string username;
         private List<Team> teams;
-        public UserClass(string name)
+        public UserClass(string tempname)
         {
             CSVmanager csvmanager = new CSVmanager();
-            List<string> savedUsers = csvmanager.readCsv("\\Users\\Users.csv");
+            List<string> savedUsers = csvmanager.readCsv("\\Memory\\Users.csv");
             bool userExists = false;
             foreach (string user in savedUsers)
             {
                 if (user.Split(',')[0] == username)
                 {
                     userExists = true;
+                    break;
                     //User already exists, just creating a user class for temporary use
                 } 
             }
             if (!userExists)
             {
                 //User does not exist, create a new user
-                string[] content = new string[3];
-                content[0] = "Name," + name;
-                content[1] = "Username," + username;
-                content[2] = "SavedTeams";
-                csvmanager.writeCsv("\\Users\\" + name, content);
-            }         
+                csvmanager.writeCsv("\\Users\\" + tempname, new string[] {"Username"+username});
+                username = "Username" + username;
+                teams = new List<Team>();
+            }   
+            else
+            {
+                List<string> content = csvmanager.readCsv("\\Users\\" + tempname);
+                username = content[0].Split(',')[1];
+                for (int i = 2; i < content.Count; i++)
+                {
+                    
+                }
+            }
         }
         public void AddTeam(string teamName, Team team)
         {
-            CSVmanager csvmanager = new CSVmanager();
-            csvmanager.editFile("\\Users\\"+name, "SavedTeams", "," + teamName, csvmanager.readCsv(name).Count);
             teams.Add(team);
+            CSVmanager csvmanager = new CSVmanager();
+            List<string> content = new List<string>();
+            bool found = false;
+            for (int i = 2; i < content.Count; i++)
+            {
+                if (content[i].Split(',')[1] == teamName)
+                {
+                    found = true;
+                }
+            }
+            if (!found)
+            {
+                csvmanager.editFile("\\Users\\" + username, "SavedTeams", "," + teamName, csvmanager.readCsv(username).Count);
+            }
         }
+        public void RemoveTeam(string teamName)
+        {
+
+        }
+        public List<Team> GetTeams() => teams;
+        public string GetName() => username;
     }
 }

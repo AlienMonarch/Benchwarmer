@@ -1,5 +1,4 @@
 using Benchwarmer.Resources.Code;
-
 namespace Benchwarmer.Resources.Pages;
 
 public partial class SignUp : ContentPage
@@ -20,7 +19,7 @@ public partial class SignUp : ContentPage
         string password = PasswordField.Text;
         CSVmanager csvmanager = new CSVmanager();
         Encryption encryption = new Encryption();
-        List<string> savedUsers = csvmanager.readCsv("\\Users\\Users.csv");
+        List<string> savedUsers = csvmanager.readCsv("\\Memory\\Users.csv");
         savedUsers.Sort();
         bool founduser = false;
         foreach (string user in savedUsers)
@@ -33,8 +32,8 @@ public partial class SignUp : ContentPage
         }
         if (founduser == false)
         {
+            csvmanager.writeCsv("\\Memory\\Users.csv", new string[] { username + "," + password });
             csvmanager.editFile("\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
-            csvmanager.writeCsv("\\Users\\Users.csv", new string[] {username + "," + password});
             App.Current.MainPage = new NavigationPage(new AppShell());
         }
     }

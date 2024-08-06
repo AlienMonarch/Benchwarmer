@@ -36,8 +36,13 @@ namespace Benchwarmer.Resources.Code
                 return lineContent;
             }
         }
-        public void writeCsv(string path, string[] content)
+        public async void writeCsv(string path, string[] content)
         {
+            FileNameChecker checker = new FileNameChecker();
+            if (!checker.Check(path))
+            {
+                return;
+            }
             string finalPath = projectDirectory + path;
             if (!File.Exists(finalPath))
             {
