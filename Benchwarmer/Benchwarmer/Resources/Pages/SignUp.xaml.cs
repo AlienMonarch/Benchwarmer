@@ -6,6 +6,8 @@ public partial class SignUp : ContentPage
 	public SignUp()
 	{
 		InitializeComponent();
+        CSVmanager cSVmanager = new CSVmanager();
+        cSVmanager.EncryptedWrite("\\Memory\\Users.csv","Admin,Admin");
 	}
 
     private void LoginButton_Clicked(object sender, EventArgs e)
@@ -18,13 +20,12 @@ public partial class SignUp : ContentPage
         string username = UsernameField.Text;
         string password = PasswordField.Text;
         CSVmanager csvmanager = new CSVmanager();
-        Encryption encryption = new Encryption();
-        List<string> savedUsers = csvmanager.readCsv("\\Memory\\Users.csv");
-        savedUsers.Sort();
+        List<string> savedUsers = csvmanager.EncryptedRead("\\Memory\\Users.csv");
         bool founduser = false;
+        if (username == null) throw new Exception("User is null");
         foreach (string user in savedUsers)
         {
-            if (user.Split(',')[0] == encryption.encrypt(username))
+            if (user.Split(',')[0] == username)
             {
                 await DisplayAlert("User Already Exists", "User Already Exists. Use a Different Username", "OK");
                 founduser = true;
@@ -32,8 +33,8 @@ public partial class SignUp : ContentPage
         }
         if (founduser == false)
         {
-            csvmanager.writeCsv("\\Memory\\Users.csv", new string[] { username + "," + password });
-            csvmanager.editFile("\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
+            csvmanager.EncryptedWrite("\\Memory\\Users.csv", username + "," + password);
+            csvmanager.EncryptedEdit("\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
             App.Current.MainPage = new NavigationPage(new AppShell());
         }
     }

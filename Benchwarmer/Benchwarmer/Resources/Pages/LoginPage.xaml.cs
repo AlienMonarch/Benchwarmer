@@ -12,20 +12,19 @@ public partial class LoginPage : ContentPage
     private async void LoginButton_Clicked(object sender, EventArgs e)
     {
         CSVmanager csvmanager = new CSVmanager();
-        Encryption encryption = new Encryption();
         string username = UsernameField.Text;
         string password = PasswordField.Text;
         List<string> users = csvmanager.readCsv("\\Memory\\Users.csv");
         users.Sort();
         foreach (string user in users)
         {
-            if (user.Split(',')[0] == encryption.encrypt(username) && user.Split(',')[1] == encryption.encrypt(password))
+            if (user.Split(',')[0] == username && user.Split(',')[1] == password)
             {
                 csvmanager.editFile("\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
                 UserClass userClass = new UserClass(username);
                 App.Current.MainPage = new NavigationPage(new AppShell());
             }
-            else if (user.Split(',')[0] == encryption.encrypt(username) && user.Split(',')[1] != encryption.encrypt(password))
+            else if (user.Split(',')[0] == username && user.Split(',')[1] != password)
             {
                 await DisplayAlert("Incorrect Password", "The password you have entered is incorrect", "OK");
             }
