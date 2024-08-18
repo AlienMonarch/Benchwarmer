@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Benchwarmer.Resources.Code;
+using Microsoft.Extensions.Logging;
 
 namespace Benchwarmer
 {
@@ -18,7 +19,6 @@ namespace Benchwarmer
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
             return builder.Build();
         }
     }

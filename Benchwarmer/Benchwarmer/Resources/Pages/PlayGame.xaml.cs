@@ -20,10 +20,9 @@ public partial class PlayGame : ContentPage
 			{
 				TextColor = Colors.Green,
 				FontSize = 15,
-				Text = team.GetPlayers()[i].GetPosition() + " " +  team.GetPlayers()[i].GetName(),
-                Margin = new Thickness(0, i*30+25, 0, 0)
-            };
-			
+				Text = team.GetPlayers()[i].GetPosition() + " " + team.GetPlayers()[i].GetName(),
+				Margin = new Thickness(0, i * 30 + 25, 0, 0)
+			};
 			GridLayout.Children.Add(label);			
 		}
     }

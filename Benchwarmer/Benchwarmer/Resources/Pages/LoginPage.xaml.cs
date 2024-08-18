@@ -14,7 +14,7 @@ public partial class LoginPage : ContentPage
         CSVmanager csvmanager = new CSVmanager();
         string username = UsernameField.Text;
         string password = PasswordField.Text;
-        List<string> users = csvmanager.readCsv("\\Memory\\Users.csv");
+        List<string> users = csvmanager.EncryptedRead("\\Memory\\Users.csv");
         users.Sort();
         foreach (string user in users)
         {

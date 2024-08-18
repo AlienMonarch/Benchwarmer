@@ -15,6 +15,7 @@ namespace Benchwarmer.Resources.Code
             CSVmanager csvmanager = new CSVmanager();
             List<string> savedUsers = csvmanager.readCsv("\\Memory\\Users.csv");
             bool userExists = false;
+            int positionGroup;
             foreach (string user in savedUsers)
             {
                 if (user.Split(',')[0] == username)

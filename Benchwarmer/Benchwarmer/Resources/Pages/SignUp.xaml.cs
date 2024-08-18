@@ -22,19 +22,27 @@ public partial class SignUp : ContentPage
         CSVmanager csvmanager = new CSVmanager();
         List<string> savedUsers = csvmanager.EncryptedRead("\\Memory\\Users.csv");
         bool founduser = false;
-        if (username == null) throw new Exception("User is null");
-        foreach (string user in savedUsers)
+        if (savedUsers.Count != 0)
         {
-            if (user.Split(',')[0] == username)
+            if (username == null) throw new Exception("User is null");
+            foreach (string user in savedUsers)
             {
-                await DisplayAlert("User Already Exists", "User Already Exists. Use a Different Username", "OK");
-                founduser = true;
+                if (user.Split(',')[0] == username)
+                {
+                    await DisplayAlert("User Already Exists", "User Already Exists. Use a Different Username", "OK");
+                    founduser = true;
+                }
             }
+        }
+        else
+        {
+            await DisplayAlert("Problem", "There was a problem with the saved users file", "OK");
         }
         if (founduser == false)
         {
             csvmanager.EncryptedWrite("\\Memory\\Users.csv", username + "," + password);
             csvmanager.EncryptedEdit("\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
+            csvmanager.EncryptedEdit("\\Memory\\Memory.csv", "User", username, 1);
             App.Current.MainPage = new NavigationPage(new AppShell());
         }
     }

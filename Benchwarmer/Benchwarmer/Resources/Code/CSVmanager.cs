@@ -7,8 +7,6 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-//If the CSV files break this is the culprit
-
 namespace Benchwarmer.Resources.Code
 {
     internal class CSVmanager
@@ -152,6 +150,7 @@ namespace Benchwarmer.Resources.Code
         public void EncryptedWrite(string path, string data)
         {
             string finalpath = projectDirectory + path;
+            List<string> content = EncryptedRead(path);
             if (!File.Exists(finalpath))
             {
                 CreateFile(path.Split('\\')[0], path.Split('\\')[1]);
@@ -178,71 +177,85 @@ namespace Benchwarmer.Resources.Code
                     {
                         using (StreamWriter encryptWriter = new(cryptoStream))
                         {
-                            encryptWriter.WriteLine("Hello World!");
+                            if (content.Count >= 0)
+                            {
+                                encryptWriter.WriteLine(data);
+                            }
+                            else
+                            {
+                                foreach (string line in content)
+                                {
+                                    encryptWriter.WriteLine(line);
+                                }
+                                encryptWriter.WriteLine(data);
+                            }
                         }
                     }
+                    Console.WriteLine("The file was encrypted.");
                 }
             }
-            Console.WriteLine("The file was encrypted.");
         }
 
-        public List<string> EncryptedRead(string path)
-        //outputs a list of strings of full lines of csv files. encryptedRead(path)[#]string.Split(',') later to get individual values
-        {
-            string finalpath = projectDirectory + path;
-            using (FileStream fileStream = new(finalpath, FileMode.Open, FileAccess.Read))
+            public List<string> EncryptedRead(string path)
+            //outputs a list of strings of full lines of csv files. encryptedRead(path)[#]string.Split(',') later to get individual values
+            //https://learn.microsoft.com/en-us/dotnet/standard/security/encrypting-data
             {
-                using (Aes aes = Aes.Create())
+                string finalpath = projectDirectory + path;
+                using (FileStream fileStream = new(finalpath, FileMode.Open, FileAccess.Read))
                 {
-                    byte[] iv = new byte[aes.IV.Length];
-                    int numBytesToRead = aes.IV.Length;
-                    int numBytesRead = 0;
-                    while (numBytesToRead > 0)
+                    using (Aes aes = Aes.Create())
                     {
-                        int n = fileStream.Read(iv, numBytesRead, numBytesToRead);
-                        if (n == 0) break;
-                        numBytesRead += n;
-                        numBytesToRead -= n;
-                    }
+                        byte[] iv = new byte[aes.IV.Length];
+                        int numBytesToRead = aes.IV.Length;
+                        int numBytesRead = 0;
+                        while (numBytesToRead > 0)
+                        {
+                            int n = fileStream.Read(iv, numBytesRead, numBytesToRead);
+                            if (n == 0) break;
+                            numBytesRead += n;
+                            numBytesToRead -= n;
+                        }
 
-                    byte[] key =
-                    {
+                        byte[] key =
+                        {
                             0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
                             0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16,
                             0x20, 0x40, 0x80, 0x30, 0x60, 0x90, 0x17, 0x18
                             };
 
-                    using (CryptoStream cryptoStream = new(
-                       fileStream,
-                       aes.CreateDecryptor(key, iv),
-                       CryptoStreamMode.Read))
-                    {
-                        using (StreamReader decryptReader = new(cryptoStream))
+                        using (CryptoStream cryptoStream = new(
+                           fileStream,
+                           aes.CreateDecryptor(key, iv),
+                           CryptoStreamMode.Read))
                         {
-                            List<string> lineContent = new List<string>();
-                            while (decryptReader.EndOfStream == false)
+                            using (StreamReader decryptReader = new(cryptoStream))
                             {
-                                lineContent.Add(decryptReader.ReadLine());
+                                List<string> lineContent = new List<string>();
+                                while (decryptReader.EndOfStream == false)
+                                {
+                                    lineContent.Add(decryptReader.ReadLine());
+                                }
+                                return lineContent;
                             }
-                            return lineContent;
                         }
                     }
                 }
+                throw new Exception("Something Broke :(");
             }
-            throw new Exception("Something Broke :(");
-        }
-        public void CreateFile(string folder, string filename)
-        {
-            string finalpath = projectDirectory + "\\" + folder + "\\" + filename;
-            FileNameChecker checker = new FileNameChecker();
-            if (!File.Exists(finalpath) && checker.Check(finalpath))
+
+            public void CreateFile(string folder, string filename)
             {
-                File.Create(finalpath).Close();
+                string finalpath = projectDirectory + "\\" + folder + "\\" + filename;
+                FileNameChecker checker = new FileNameChecker();
+                if (!File.Exists(finalpath) && checker.Check(finalpath))
+                {
+                    File.Create(finalpath).Close();
+                }
+                else
+                {
+                    Console.WriteLine("File name already exists or contains inelligible characters or strings");
+                }
             }
-            else
-            {
-                Console.WriteLine("File name already exists or contains inelligible characters or strings");
-            }
-        }
+        
     }
 }
