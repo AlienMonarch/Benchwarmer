@@ -2,25 +2,79 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benchwarmer.Resources.Pages.Home"
-             Title="Home"
              Shell.NavBarIsVisible="False" 
              BackgroundColor="#FFFFFF">
     <VerticalStackLayout
-        Padding="200,0"
+        Padding="10,75,10,0"
         Spacing="40">
-        
         <Label
-            x:Name="CsvText"
-            Padding="0,0,0,0"
+            x:Name="Title"
             Text="Benchwarmer"
-            TextColor="#99E88C"
-            FontSize="70"
-            FontAttributes="Bold"
+            FontSize="50"
             Style="{StaticResource Headline}"
-            SemanticProperties.HeadingLevel="Level1" />
-        <Button
-    x:Name="Csvtest"
-    Text="CSVTEST"
-    Clicked="Csvtest_Clicked"/>
+            TextColor="#99E88C"
+            SemanticProperties.HeadingLevel="Level1"
+            HeightRequest="100">
+        </Label>
+
+        <Border Stroke="#1F990C"
+        StrokeThickness="1"
+        StrokeShape="RoundRectangle 40,40,40,40"
+        Background="#B2E3AB"
+        Padding="16,8"
+        HorizontalOptions="Center">
+            
+            <VerticalStackLayout
+            HeightRequest="200"
+            WidthRequest="300"
+            Padding="10,45,10,10"
+            >
+            <Button
+                x:Name="PlayGameButton"
+                Text="Play Game"
+                TextColor="Black"
+                BackgroundColor="#1F990C"
+                Clicked="PlayGameButton_Clicked"
+                HeightRequest="25"
+            />
+            <Picker
+                x:Name="Picker"
+                BackgroundColor="#F1E3E4"
+                Title="⠀"
+                TextColor="Black"
+                HeightRequest="75"
+                
+                >
+                <Picker.ItemsSource
+                    BackgroundColor="#F1E3E4"
+                    >
+                    <x:Array Type="{x:Type x:String}">
+                            <x:String>Teams</x:String>
+                            <x:String>Test Team 2</x:String>
+                            <x:String>Test Team 3</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </VerticalStackLayout>
+        </Border>
+
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0"
+                       x:Name="Label1"
+                       TextColor="Black"
+                       
+                    ></Label>
+                <Label></Label>
+            </Grid>
+        </VerticalStackLayout>
+        
     </VerticalStackLayout>
 </ContentPage>

@@ -9,10 +9,11 @@
         Spacing="30">
 
         <Label
-    Text="Benchwarmer"
-    FontSize="50"
-    Style="{StaticResource Headline}"
-    SemanticProperties.HeadingLevel="Level1" />
+            Text="Benchwarmer"
+            FontSize="50"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" 
+            TextColor="#99E88C"/>
 
         <Label
             Text="Welcome Back"
@@ -22,7 +23,7 @@
         
         <Entry
             x:Name="UsernameField"
-            Text="Username"
+            Text=""
             TextColor="Black"
             BackgroundColor="#F1E3E4"
             IsTextPredictionEnabled="False"
@@ -30,7 +31,7 @@
         
         <Entry
             x:Name="PasswordField"
-            Text="Password"
+            Text=""
             TextColor="Black"
             BackgroundColor="#F1E3E4"
             IsTextPredictionEnabled="False"

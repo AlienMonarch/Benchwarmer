@@ -10,7 +10,8 @@
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            TextColor="#99E88C"/>
         <Label
 Text="Benchwarmer"
 FontSize="50"

@@ -2,12 +2,37 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benchwarmer.Resources.Pages.Profile"
-             Title="Profile"
+             Background="#FFFFFF"
              Shell.NavBarIsVisible="False">
     <VerticalStackLayout>
-        <Label 
+        <Label
+            x:Name="Username"
+            Padding="0,0,0,0"
             Text="Profile"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            TextColor="#000000"
+            FontSize="40"
+            FontAttributes="Bold"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+        <Button
+            x:Name="ChangeUsernameButton"
+            Clicked="ChangeUsernameButton_Clicked"
+            Text="Change Username"
+            Background="#F1E3E4"/>
+        <Button
+            x:Name="ChangePasswordButton"
+            Clicked="ChangePasswordButton_Clicked"
+            Text="Change Password"
+            Background="#F1E3E4"/>
+        <Button 
+            x:Name="LoggoutButton"
+            Clicked="LoggoutButton_Clicked"
+            Text="Loggout"
+            Background="#ED4141"/>
+        <Button 
+    x:Name="DeleteAccountButton"
+    Clicked="DeleteAccountButton_Clicked"
+    Text="Delete Account"
+    Background="#ED4141"/>
     </VerticalStackLayout>
 </ContentPage>

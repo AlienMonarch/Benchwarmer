@@ -10,7 +10,7 @@ namespace Benchwarmer.Resources.Code
     {
         public Main() 
         {
-            List<Team> teams = new List<Team>();
+            List<Team> teams = new List<Team>(); 
         }
     }
 }

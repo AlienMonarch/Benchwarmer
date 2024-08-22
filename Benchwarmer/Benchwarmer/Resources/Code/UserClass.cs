@@ -13,7 +13,7 @@ namespace Benchwarmer.Resources.Code
         public UserClass(string tempname)
         {
             CSVmanager csvmanager = new CSVmanager();
-            List<string> savedUsers = csvmanager.readCsv("\\Memory\\Users.csv");
+            List<string> savedUsers = csvmanager.Read("\\Memory\\Users.csv");
             bool userExists = false;
             int positionGroup;
             foreach (string user in savedUsers)
@@ -28,13 +28,13 @@ namespace Benchwarmer.Resources.Code
             if (!userExists)
             {
                 //User does not exist, create a new user
-                csvmanager.writeCsv("\\Users\\" + tempname, new string[] {"Username"+username});
+                csvmanager.Write("\\Users\\" + tempname, "Username"+username);
                 username = "Username" + username;
                 teams = new List<Team>();
             }   
             else
             {
-                List<string> content = csvmanager.readCsv("\\Users\\" + tempname);
+                List<string> content = csvmanager.Read("\\Users\\" + tempname);
                 username = content[0].Split(',')[1];
                 for (int i = 2; i < content.Count; i++)
                 {
@@ -57,7 +57,7 @@ namespace Benchwarmer.Resources.Code
             }
             if (!found)
             {
-                csvmanager.editFile("\\Users\\" + username, "SavedTeams", "," + teamName, csvmanager.readCsv(username).Count);
+                csvmanager.EditFile("\\Users\\" + username, "SavedTeams", "," + teamName, csvmanager.Read(username).Count);
             }
         }
         public void RemoveTeam(string teamName)

@@ -1,2 +1,3 @@
-UserIsLoggedIn,0
-User,TestUser
+UserIsLoggedIn,1
+CurrentUser,TestUser
+CurrentTeam,TestTeam

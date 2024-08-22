@@ -9,5 +9,9 @@
             Text="Stats"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <VerticalStackLayout
+            x:Name="StatsArea">
+            
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

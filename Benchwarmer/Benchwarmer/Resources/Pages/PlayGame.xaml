@@ -7,10 +7,25 @@
     <ScrollView>
         <VerticalStackLayout
         x:Name="Vsl"
-        Padding="10,300,10,200"
+        Padding="10,0,10,200"
         Spacing="10">
+            <Label
+                x:Name="GameTimer"
+                Text="00:00"
+                TextColor="Red"
+                FontSize="70"
+                
+                Padding="0,0,0,0"
+                FontAttributes="Bold"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"  
+                />
             <Image Source="hockeyfield.jpg"
-                   Rotation="90"/>
+                Rotation="90"
+                HeightRequest="1000"
+                WidthRequest="1000"
+                />
+            
             <Grid
             x:Name="GridLayout"
             Padding="10,10,0,0"

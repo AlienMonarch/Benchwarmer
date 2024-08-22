@@ -3,11 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benchwarmer.Resources.Pages.Settings"
              Title="Settings"
-             Shell.NavBarIsVisible="False" >
-    <VerticalStackLayout>
-        <Label 
-            Text="Settings"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Shell.NavBarIsVisible="False" 
+             BackgroundColor="#FFFFFF">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition Height="75" />
+            <RowDefinition Height="75" />
+            <RowDefinition Height="75" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600" />
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Grid.Row="0"
+                Text="Colourblind Mode"
+                TextColor="black"
+                Padding="200,25,0,0"
+               />
+        <Switch Grid.Column="1" Grid.Row="0"
+            x:Name="ColorblindModeSwitch"
+            OnColor="#1F990C"
+            ThumbColor="#F1E3E4"
+            HorizontalOptions="End"
+            WidthRequest="200"
+            
+            />
+        <Label Grid.Column="0" Grid.Row="1"
+                Text="Settings 1"
+                TextColor="black"
+                Padding="200,25,0,0"
+               />
+        <Switch Grid.Column="1" Grid.Row="1"
+            x:Name="SettingsSwitch1"
+            OnColor="#1F990C"
+            ThumbColor="#F1E3E4"
+            HorizontalOptions="End"
+            WidthRequest="200"
+            />
+        <Label Grid.Column="0" Grid.Row="2"
+               Text="Settings 2"
+               TextColor="black"
+               Padding="200,25,0,0"
+               />
+        <Switch Grid.Column="1" Grid.Row="2"
+            x:Name="SettingsSwitch2"
+            OnColor="#1F990C"
+            ThumbColor="#F1E3E4"
+            HorizontalOptions="End"
+            WidthRequest="200"
+            />
+    </Grid>
 </ContentPage>
