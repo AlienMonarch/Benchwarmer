@@ -23,7 +23,7 @@
         
         <Entry
             x:Name="UsernameField"
-            Text=""
+            Placeholder="Username"
             TextColor="Black"
             BackgroundColor="#F1E3E4"
             IsTextPredictionEnabled="False"
@@ -31,7 +31,7 @@
         
         <Entry
             x:Name="PasswordField"
-            Text=""
+            Placeholder="Password"
             TextColor="Black"
             BackgroundColor="#F1E3E4"
             IsTextPredictionEnabled="False"

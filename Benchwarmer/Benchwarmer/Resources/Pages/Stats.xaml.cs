@@ -10,10 +10,10 @@ public partial class Stats : ContentPage
 	{
 		InitializeComponent();
 		CSVmanager csv = new CSVmanager();
-		string[] team = csv.Read("\\" // \\
-			+ csv.Read("\\Memory\\Memory")[1].Split(',')[1] // \\TestUser
+		string[] team = csv.EncryptedRead("\\" // \\
+			+ csv.EncryptedRead("\\Memory\\Memory")[1].Split(',')[1] // \\TestUser
 			+ "\\" // \\TestUser\\
-			+ csv.Read("\\Memory\\Memory")[2].Split(',')[1] // \\TestUser\\TestTeam
+			+ csv.EncryptedRead("\\Memory\\Memory")[2].Split(',')[1] // \\TestUser\\TestTeam
 			+ ".csv").ToArray(); // \\TestUser\\TestTeam.csv
 
 		for (int i = 1; i < team.Length; i++)

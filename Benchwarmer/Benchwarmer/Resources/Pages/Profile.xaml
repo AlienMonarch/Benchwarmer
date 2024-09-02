@@ -4,10 +4,11 @@
              x:Class="Benchwarmer.Resources.Pages.Profile"
              Background="#FFFFFF"
              Shell.NavBarIsVisible="False">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        Padding="120,20,120,20">
         <Label
+            Margin="10"
             x:Name="Username"
-            Padding="0,0,0,0"
             Text="Profile"
             TextColor="#000000"
             FontSize="40"
@@ -15,16 +16,19 @@
             Style="{StaticResource Headline}"
             SemanticProperties.HeadingLevel="Level1" />
         <Button
+             Margin="10"
             x:Name="ChangeUsernameButton"
             Clicked="ChangeUsernameButton_Clicked"
             Text="Change Username"
             Background="#F1E3E4"/>
         <Button
+             Margin="10"
             x:Name="ChangePasswordButton"
             Clicked="ChangePasswordButton_Clicked"
             Text="Change Password"
             Background="#F1E3E4"/>
         <Button 
+             Margin="10"
             x:Name="LoggoutButton"
             Clicked="LoggoutButton_Clicked"
             Text="Loggout"

@@ -12,17 +12,29 @@ namespace Benchwarmer
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+            
             CSVmanager csvmanager = new CSVmanager();
-            csvmanager.Write("\\Memory\\Memory.csv", "UserIsLoggedIn,1");
-            /*string isLoggedinValue = csvmanager.Read("\\Memory\\Memory.csv")[0].Split(',')[1];
-
-            if (isLoggedinValue != "1")
+            try
             {
-                //LoginPage
-                App.Current.MainPage = new NavigationPage(new LoginPage());
-                //csvmanager.editFile(@"\Resources\Memory\Login.csv", "UserIsLoggedIn", "Oh bad words everything broke :(", 1);
-            }*/
-            //csvmanager.EditFile("\\Memory\\Memory.csv", "UserIsLoggedIn", "0", 1);
+                //csvmanager.EncryptWrite("\\Memory\\Memory.csv", "UserIsLoggedIn,0\nCurrentUser,Admin\nCurrentTeam,NoTeam");
+                //csvmanager.Replace("\\Memory\\Memory.csv", "UserIsLoggedIn", "0", 1);
+                string isLoggedinValue = csvmanager.EncryptedRead("\\Memory\\Memory.csv")[0].Split(',')[1];
+                if (isLoggedinValue != "1")
+                {
+                    App.Current.MainPage = new NavigationPage(new LoginPage());
+                    //csvmanager.Replace(@"\Memory\Login.csv", "UserIsLoggedIn", "1", 1);
+                }
+                else
+                {
+                    csvmanager.Replace("\\Memory\\Memory.csv", "UserIsLoggedIn", "0", 1);
+                }
+            }
+            catch (Exception)
+            {
+                csvmanager.Replace("\\Memory\\Memory.csv", "UserIsLoggedIn", "0", 1);
+                csvmanager.Replace("\\Memory\\Memory.csv", "CurrentUser", "Admin", 1);
+                csvmanager.Replace("\\Memory\\Memory.csv", "CurrentTeam", "NoTeam", 1);
+            }            
         }
     }
 

@@ -13,9 +13,8 @@ namespace Benchwarmer.Resources.Code
         public UserClass(string tempname)
         {
             CSVmanager csvmanager = new CSVmanager();
-            List<string> savedUsers = csvmanager.Read("\\Memory\\Users.csv");
+            List<string> savedUsers = csvmanager.EncryptedRead("\\Memory\\Users.csv");
             bool userExists = false;
-            int positionGroup;
             foreach (string user in savedUsers)
             {
                 if (user.Split(',')[0] == username)
@@ -28,13 +27,14 @@ namespace Benchwarmer.Resources.Code
             if (!userExists)
             {
                 //User does not exist, create a new user
-                csvmanager.Write("\\Users\\" + tempname, "Username"+username);
-                username = "Username" + username;
+                csvmanager.EncryptWrite("\\Users\\" + tempname + "\\" + tempname + ".csv", "Username," + username);
+                csvmanager.Replace("\\Memory\\Memory.csv", "CurrentUser", username, 1);
+                csvmanager.Replace("\\Memory\\Memory.csv","CurrentTeam","NoTeam", 1);
                 teams = new List<Team>();
             }   
             else
             {
-                List<string> content = csvmanager.Read("\\Users\\" + tempname);
+                List<string> content = csvmanager.EncryptedRead("\\Users\\" + tempname);
                 username = content[0].Split(',')[1];
                 for (int i = 2; i < content.Count; i++)
                 {
@@ -57,7 +57,7 @@ namespace Benchwarmer.Resources.Code
             }
             if (!found)
             {
-                csvmanager.EditFile("\\Users\\" + username, "SavedTeams", "," + teamName, csvmanager.Read(username).Count);
+                csvmanager.Replace("\\Users\\" + username, "SavedTeams", "," + teamName, csvmanager.EncryptedRead(username).Count);
             }
         }
         public void RemoveTeam(string teamName)

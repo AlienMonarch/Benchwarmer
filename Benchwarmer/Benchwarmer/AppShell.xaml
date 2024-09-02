@@ -13,31 +13,17 @@
         <ShellContent
             x:Name="HomePage"
             Title="Home"
-            Icon="homeicon.svg"
             ContentTemplate="{DataTemplate Pages:Home}"/>
         <ShellContent
-            Title="Profile"
-            Icon="profileicon.svg"
-            ContentTemplate="{DataTemplate Pages:Profile}"/>
-        <ShellContent
-            Title="Stats"
-            Icon="statsicon.svg"
-            ContentTemplate="{DataTemplate Pages:Stats}"/>
-        <ShellContent
             Title="Team"
-            Icon="teamicon.svg"
             ContentTemplate="{DataTemplate Pages:TeamPage}"/>
-        <ShellContent
-            Title="Settings"
-            Icon="settingsicon.svg"
-            ContentTemplate="{DataTemplate Pages:Settings}"/>
-        <ShellContent
+            <ShellContent
             Title="Play"
             ContentTemplate="{DataTemplate Pages:PlayGame}"/>
-        <ShellContent
+            <ShellContent
             Title="Create Team"
             ContentTemplate="{DataTemplate Pages:CreateTeam}"/>
-        <ShellContent
+            <ShellContent
             Title="Edit Team"
             ContentTemplate="{DataTemplate Pages:EditTeam}"/>
     </TabBar>

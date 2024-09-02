@@ -26,7 +26,7 @@ SemanticProperties.HeadingLevel="Level1" />
 
         <Entry
         x:Name="UsernameField"
-        Text="Username"
+        Placeholder="Username"
         TextColor="Black"
         BackgroundColor="#F1E3E4"
         IsTextPredictionEnabled="False"
@@ -34,7 +34,7 @@ SemanticProperties.HeadingLevel="Level1" />
 
         <Entry
         x:Name="PasswordField"
-        Text="Password"
+        Placeholder="Password"
         TextColor="Black"
         BackgroundColor="#F1E3E4"
         IsTextPredictionEnabled="False"
@@ -55,5 +55,6 @@ SemanticProperties.HeadingLevel="Level1" />
         HorizontalOptions="Center"
         Clicked="LoginButton_Clicked"
         />
+        
     </VerticalStackLayout>
 </ContentPage>

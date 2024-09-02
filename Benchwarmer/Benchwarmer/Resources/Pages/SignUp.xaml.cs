@@ -8,7 +8,6 @@ public partial class SignUp : ContentPage
 	{
 		InitializeComponent();
         CSVmanager cSVmanager = new CSVmanager();
-        cSVmanager.Write("\\Memory\\Users.csv","Admin,Admin");
     }
 
     private void LoginButton_Clicked(object sender, EventArgs e)
@@ -16,21 +15,25 @@ public partial class SignUp : ContentPage
         App.Current.MainPage = new NavigationPage(new LoginPage());
     }
 
+
     private async void SignUpButton_Clicked(object sender, EventArgs e)
     {
         string username = UsernameField.Text;
         string password = PasswordField.Text;
         CSVmanager csvmanager = new CSVmanager();
-        List<string> savedUsers = csvmanager.Read("\\Memory\\Users.csv");
+        List<string> savedUsers = csvmanager.EncryptedRead("\\Memory\\Users.csv");
         bool founduser = false;
-
+        FileNameChecker fn = new FileNameChecker();
 
         if (savedUsers.Count != 0)
         {
-            if (username == null) throw new Exception("User is null");
+            if (username == null) { await DisplayAlert("Username is null", "Username is Null", "OK"); return; }
+            if (password == null) { await DisplayAlert("Password is null", "password is Null", "OK"); return; }
+            if (!fn.Check(username)) { await DisplayAlert("Username is Invalid", "Username is Invalid", "OK"); return; }
+            if (!fn.Check(username)) { await DisplayAlert("Password is Invalid", "Password is Invalid", "OK"); return; }
             foreach (string user in savedUsers)
             {
-                if (user == null) throw new Exception("User is null");
+                if (user == null) await DisplayAlert("User is null", "Username is Null", "OK");
                 if (user == username)
                 {
                     await DisplayAlert("User Already Exists", "User Already Exists. Use a Different Username", "OK");
@@ -40,16 +43,19 @@ public partial class SignUp : ContentPage
         }
         else
         {
+            username = "Admin";
+            password = "Admin";
             await DisplayAlert("Problem", "There was a problem with the saved users file", "OK");
         }
 
         if (founduser == false)
         {
-            Directory.CreateDirectory("\\Benchwarmer\\Resorces\\Users\\" + username);
-            csvmanager.Write("\\Memory\\Users.csv", username + "," + password);
-            csvmanager.EditFile("\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
-            csvmanager.EditFile("\\Memory\\Memory.csv", "User", username, 1);
-            csvmanager.Write("\\Users\\" + username, username + "," + password);
+            csvmanager.CreateDirectory("\\Users\\" + username);
+            csvmanager.EncryptWrite("\\Memory\\Users.csv", username + "," + password);
+            csvmanager.Replace("\\Memory\\Memory.csv", "CurrentUser", username, 1);
+            csvmanager.CreateFile("\\Users", username + "\\" + username + ".csv");
+            csvmanager.EncryptWrite("\\Users\\" + username + "\\" + username + ".csv", username + "," + password);
+            csvmanager.Replace("\\Memory\\Memory.csv", "UserIsLoggedIn", "1", 1);
             App.Current.MainPage = new NavigationPage(new AppShell());
         }
     }

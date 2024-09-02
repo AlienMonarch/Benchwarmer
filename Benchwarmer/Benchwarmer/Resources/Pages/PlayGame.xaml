@@ -11,7 +11,7 @@
         Spacing="10">
             <Label
                 x:Name="GameTimer"
-                Text="00:00"
+                Text="00:00:00"
                 TextColor="Red"
                 FontSize="70"
                 
@@ -20,17 +20,31 @@
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1"  
                 />
+            <Button
+                x:Name="StartGame"
+                Text="Start Game"
+                BackgroundColor="Green"
+                TextColor="Black"
+                Clicked="StartGame_Clicked"/>
             <Image Source="hockeyfield.jpg"
                 Rotation="90"
                 HeightRequest="1000"
                 WidthRequest="1000"
                 />
-            
+
             <Grid
-            x:Name="GridLayout"
-            Padding="10,10,0,0"
-            ColumnSpacing="10"
-            RowSpacing="10"/>
+                x:Name="PlayersGrid"
+                Padding="10,20,0,0"
+                >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="300"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
             
     </VerticalStackLayout>
     </ScrollView>

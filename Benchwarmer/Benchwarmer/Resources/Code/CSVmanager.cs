@@ -20,108 +20,6 @@ namespace Benchwarmer.Resources.Code
                 projectDirectory = AppDomain.CurrentDomain.BaseDirectory.Split("\\bin")[0] + "\\Resources";
             }
         }
-        public List<string> Read(string csvPath)
-        //outputs a list of strings of full lines of csv files. string.Split(',') later to get individual values
-        {
-            string finalpath = projectDirectory + csvPath;
-            if (!File.Exists(finalpath))
-            {
-                throw new FileNotFoundException(finalpath);
-            }
-            using (var reader = new StreamReader(finalpath))
-            {
-                List<string> lineContent = new List<string>();
-                while (reader.EndOfStream == false)
-                {
-                    lineContent.Add(encryption.Decrypt(reader.ReadLine(), "Benchwarmer"));
-                }
-                return lineContent;
-            }
-        }
-        public async void Write(string path, string content)
-        {
-            FileNameChecker checker = new FileNameChecker();
-            if (!checker.Check(path))
-            {
-                return;
-            }
-            string finalPath = projectDirectory + path;
-            if (!File.Exists(finalPath))
-            {
-                throw new FileNotFoundException(finalPath);
-            }
-            File.AppendAllText(finalPath, "\n" + encryption.Encrypt(content, "Benchwarmer"));
-        }
-
-        public void EditFile(string path, string name, string newContent, int place)
-        {
-            List<string> lines = new List<string>();
-            string finalpath = projectDirectory + path;
-            if (!File.Exists(finalpath))
-            {
-                throw new FileNotFoundException(finalpath);
-            }
-            using (StreamReader reader = new StreamReader(finalpath))
-            {
-                string line;
-
-                while ((line = encryption.Decrypt(reader.ReadLine(), "Benchwarmer")) != null)
-                {
-                    string[] split = line.Split(',');
-
-                    if (split[0].Contains(name))
-                    {
-                        split[place] = newContent;
-                        line = string.Join(",", split);
-                    }
-                    lines.Add(encryption.Encrypt(line, "Benchwarmer"));
-                }
-            }
-
-            using (StreamWriter writer = new StreamWriter(finalpath, false))
-            {
-                foreach (String line in lines)
-                {
-                    writer.WriteLine(line);
-                }
-            }
-        }
-        private string Encrypt(string plaintext, int shift)
-        {
-            string cyphertext = "";
-            foreach (char c in plaintext)
-            {
-                if (char.IsLetter(c))
-                {
-                    char lowerc = char.ToLower(c);
-                    char shifted = (char)(((lowerc + shift - 'a') % 26) + 'a');
-                    cyphertext += shifted;
-                }
-                else
-                {
-                    cyphertext += c;
-                }
-            }
-            return cyphertext;
-        }
-        private string Decrypt(string cyphertext, int shift)
-        {
-            string plaintext = "";
-            foreach (char c in cyphertext)
-            {
-                if (char.IsLetter(c))
-                {
-                    char unshifted = (char)(((c - shift - 'a') % 26) + 'a');
-                    plaintext += unshifted;
-                }
-                else
-                {
-                    plaintext += c;
-                }
-            }
-            return plaintext;
-        }
-
         public void Replace(string path, string nameValue, string replace, int place)
         {
             string finalpath = projectDirectory + path;
@@ -337,6 +235,10 @@ namespace Benchwarmer.Resources.Code
         //https://learn.microsoft.com/en-us/dotnet/standard/security/encrypting-data
         {
             string finalpath = projectDirectory + path;
+            if(path.Contains("\\Resorces\\Resorces"))
+            {
+                throw new Exception("Somehow there are two \\resorces here?");
+            }
             using (FileStream fileStream = new(finalpath, FileMode.Open, FileAccess.Read))
             {
                 using (Aes aes = Aes.Create())
@@ -381,16 +283,21 @@ namespace Benchwarmer.Resources.Code
 
         public void CreateFile(string folder, string filename)
         {
-            string finalpath = projectDirectory + "\\" + folder + "\\" + filename;
-            FileNameChecker checker = new FileNameChecker();
-            if (!File.Exists(finalpath) && checker.Check(finalpath))
-            {
-                File.Create(finalpath).Close();
-            }
-            else
-            {
-                Console.WriteLine("File name already exists or contains inelligible characters or strings");
-            }
+            File.Create(projectDirectory + "\\" + folder + "\\" + filename).Dispose();
+        }
+
+        public void CreateDirectory(string path)
+        {
+            Directory.CreateDirectory(projectDirectory + path);
+        }
+        public void DeleteFile(string path)
+        {
+            File.Delete(projectDirectory + path);
+        }
+
+        public void ChangeName(string path, string newPath)
+        {
+            File.Move(projectDirectory + path, projectDirectory + newPath);
         }
     }
 }
