@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Benchwarmer</id>
+    <version>1.0.0</version>
+    <authors>Benchwarmer</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="a6a3aa17be56fd339dd76ed5b7e40552a642e84d" />
+    <dependencies>
+      <group targetFramework="net8.0-android34.0">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.61" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.61" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-ios17.2">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.61" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.61" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-maccatalyst17.2">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.61" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.61" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-windows10.0.19041">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.61" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.61" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-android\Benchwarmer.runtimeconfig.json" target="lib\net8.0-android34.0\Benchwarmer.runtimeconfig.json" />
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-android\Benchwarmer.dll" target="lib\net8.0-android34.0\Benchwarmer.dll" />
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-android\Benchwarmer.xml" target="lib\net8.0-android34.0\Benchwarmer.xml" />
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-ios\ios-arm64\Benchwarmer.runtimeconfig.json" target="lib\net8.0-ios17.2\Benchwarmer.runtimeconfig.json" />
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-ios\ios-arm64\Benchwarmer.dll" target="lib\net8.0-ios17.2\Benchwarmer.dll" />
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Benchwarmer.runtimeconfig.json" target="lib\net8.0-maccatalyst17.2\Benchwarmer.runtimeconfig.json" />
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Benchwarmer.dll" target="lib\net8.0-maccatalyst17.2\Benchwarmer.dll" />
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Benchwarmer.runtimeconfig.json" target="lib\net8.0-windows10.0.19041\Benchwarmer.runtimeconfig.json" />
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Benchwarmer.dll" target="lib\net8.0-windows10.0.19041\Benchwarmer.dll" />
+    <file src="C:\Users\finnt\OneDrive\Documents\GitHub\Benchwarmer\Benchwarmer\Benchwarmer\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri" target="lib\net8.0-windows10.0.19041\resources.pri" />
+  </files>
+</package>
